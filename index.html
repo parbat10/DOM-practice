@@ -14,8 +14,31 @@
     >Subsrcibe</button>
     <p>for rock-paper-scissor</p>
     <a href="./rock-paper-scissor.html"><button>click here</button></a>
+    <p>amazon shipping calculator</p>
+    <p>Order under $40 = +$10 shipping</p>
+    <p>Order over $40 = FREE shipping</p>
+    <input class="js-cost-input" type="text" placeholder="Cost of roder" onkeydown="handleCostKeydown(event)">
+    <button onclick="calculateTotal()"
+    >calculate</button>
+    <p class="js-total-cost"></p>
     
     <script>
+        function handleCostKeydown(event){
+            if(event.key === 'Enter'){
+                calculateTotal()
+            }
+        }
+        function calculateTotal(){
+            const inputElement = document.querySelector('.js-cost-input');
+            let cost = Number(inputElement.value) ;
+
+            if ( cost < 40){
+                cost = cost +10;
+            }
+
+            document.querySelector('.js-total-cost')
+             .innerHTML = `$${cost}`;
+        }
         function Subscribe() {
             const buttonElement = document.querySelector('.js-Subscribe-button');
 
