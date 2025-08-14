@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./css-files/rock-paper.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock-paper-scissors game</title>
@@ -8,16 +9,16 @@
 </head>
 <body>
     <a href="./index.html"><button>home</button></a>
-    <p>rock-paper-scissors game   </p>
+    <p class="title">rock-paper-scissors game   </p>
     <button onclick="
       playGame('rock');
-    ">rock</button>
+    "><img src="./images/rock-emoji.png" alt=""></button>
     <button onclick="
         playGame('paper');"
-    >paper </button>
+    ><img src="./images/paper-emoji.png" alt=""> </button>
     <button onclick="
     playGame('scissor')"
-    >scissor</button>
+    ><img src="./images/scissors-emoji.png" alt=""></button>
 
     <p class="js-result"></p>
     <p class="js-moves"></p>

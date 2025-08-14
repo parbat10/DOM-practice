@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css-files/shipping.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -8,17 +9,16 @@
 <body>
     <p>YouTube Subscribe Button</p>
     <button onclick="
-    Subscribe();
-    "
-    class="js-Subscribe-button"
+    Subscribe();"
+    class="js-Subscribe-button Subscribe-button"
     >Subscribe</button>
     <p>for rock-paper-scissor</p>
     <a href="./rock-paper-scissor.html"><button>click here</button></a>
     <p>amazon shipping calculator</p>
     <p>Order under $40 = +$10 shipping</p>
     <p>Order over $40 = FREE shipping</p>
-    <input class="js-cost-input" type="text" placeholder="Cost of roder" onkeydown="handleCostKeydown(event)">
-    <button onclick="calculateTotal()"
+    <input class="js-cost-input cost-input" type="text" placeholder="Cost of order" onkeydown="handleCostKeydown(event)">
+    <button onclick="calculateTotal()" class="calculate-button"
     >calculate</button>
     <p class="js-total-cost"></p>
     
