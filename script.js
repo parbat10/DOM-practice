@@ -1,3 +1,12 @@
+    function Subscribe() {
+            const buttonElement = document.querySelector('.js-Subscribe-button');
+
+            if( buttonElement.innerText === 'Subscribe'){
+                buttonElement.innerHTML = 'Subscribed';
+            }else{
+                buttonElement.innerHTML = 'Subscribe';
+            }
+    }
     function handleCostKeydown(event){
         if(event.key === 'Enter'){
             calculateTotal()
@@ -13,13 +22,4 @@
 
             document.querySelector('.js-total-cost')
              .innerHTML = `$${cost}`;
-    }
-    function Subscribe() {
-            const buttonElement = document.querySelector('.js-Subscribe-button');
-
-            if( buttonElement.innerText === 'Subscribe'){
-                buttonElement.innerHTML = 'Subscribed';
-            }else{
-                buttonElement.innerHTML = 'Subscribe';
-            }
     }
