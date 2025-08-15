@@ -37,3 +37,14 @@ body{
 .calculate-button:active{
     background-color: rgb(143, 239, 143);
 }
+.button-click{
+    background-color: rgb(3, 198, 198);
+    padding: 7px 9px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+.button-click:hover{
+    background-color: rgb(1, 231, 231);
+}

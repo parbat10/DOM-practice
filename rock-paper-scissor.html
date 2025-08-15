@@ -8,17 +8,17 @@
     
 </head>
 <body>
-    <a href="./index.html"><button>home</button></a>
+    <a href="./index.html"><button><img class="button-home" src="./images/home-images.png" alt=""></button></a>
     <p class="title">rock-paper-scissors game   </p>
     <button class="button-css" onclick="
       playGame('rock');
-    "><img class="image" src="./images/rock-emoji.png" alt=""></button>
+    "><img class="image" src="./images/rock-emoji.png" alt="rock"></button>
     <button class="button-css" onclick="
         playGame('paper');"
-    ><img class="image" src="./images/paper-emoji.png" alt=""> </button>
+    ><img class="image" src="./images/paper-emoji.png" alt="paper"> </button>
     <button class="button-css" onclick="
     playGame('scissor')"
-    ><img class="image" src="./images/scissors-emoji.png" alt=""></button>
+    ><img class="image" src="./images/scissors-emoji.png" alt="scissor"></button>
 
     <p class="js-result"></p>
     <p class="js-moves"></p>
@@ -31,7 +31,7 @@
     localStorage.removeItem('score');
     alert('The game was reset');
     updatedScore();
-    ">reset</button>
+    "><img class="button-home" src="./images/reset-image.png" alt="reset"></button>
     
     
     

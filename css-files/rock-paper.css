@@ -20,3 +20,6 @@ body{
     border: none;
     cursor: pointer;
 }
+.button-home{
+    height: 30px;
+}
