@@ -22,4 +22,5 @@ body{
 }
 .button-home{
     height: 30px;
+    cursor: pointer;
 }
