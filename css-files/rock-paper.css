@@ -14,6 +14,7 @@ body{
     border-color: white;
     border-radius: 50px;
     background-color: transparent;
+    margin-right: 5px;
 }
 .button-css{
     background-color: transparent;
@@ -23,8 +24,7 @@ body{
 .button-home{
     height: 30px;
     cursor: pointer;
-<<<<<<< HEAD
 }
-=======
+.move{
+    height: 50px;
 }
->>>>>>> cbdb73240d0d501e29abf4a5ba459562b3cf21e1
