@@ -28,3 +28,15 @@ body{
 .move{
     height: 50px;
 }
+.button-auto{
+    padding: 8px 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 200px;
+    background-color: rgb(207, 180, 4);
+    color: white;
+    cursor: pointer;
+}
+.button-auto:hover{
+    background-color: rgb(255, 208, 0);
+}
