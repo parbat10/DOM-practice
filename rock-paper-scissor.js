@@ -27,6 +27,45 @@ let score = JSON.parse(localStorage.getItem('score'))||
       isAutoPlaying = false;
    }
 }
+
+   document.querySelector('.js-rock-button')
+      .addEventListener('click', ()=>{
+         playGame('rock');
+      });
+   document.querySelector('.js-paper-button')
+      .addEventListener('click', ()=>{
+         playGame('paper');
+      });
+   document.querySelector('.js-scissor-button')
+      .addEventListener('click', ()=>{
+         playGame('scissor');
+      });
+
+   document.querySelector('.js-auto-button')
+      .addEventListener('click', () => {
+         autoPlay();
+      });
+   document.querySelector('.js-reset-button')
+      .addEventListener('click',() => {
+         score.wins = 0;
+         score.ties = 0;
+         score.losses = 0;
+         localStorage.removeItem('score');
+         alert('The game was reset');
+         updatedScore();
+      });
+   
+      document.body.addEventListener('keydown', (event) => {
+         if(event.key === 'r'){
+            playGame('rock');
+         }else if(event.key === 'p'){
+            playGame('paper');
+         }else if(event.key === 's'){
+            playGame('scissor');
+         }
+
+      });
+
       function playGame(playerMove){
             const ComputerMove = PickComputerMove();  
       let result = '';
